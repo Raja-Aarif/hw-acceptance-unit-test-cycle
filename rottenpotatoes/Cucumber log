@@ -1,0 +1,201 @@
+ec2-user:~/environment $ cd  hw-acceptance-unit-test-cycle/
+ec2-user:~/environment/hw-acceptance-unit-test-cycle (master) $ zip -r hw5.zip rottenpotatoes/app/ rottenpotatoes/config/ rottenpotatoes/db/migrate rottenpotatoes/features/ rottenpotatoes/spec/ rottenpotatoes/Gemfile rottenpotatoes/Gemfile.lock
+  adding: rottenpotatoes/app/ (stored 0%)
+  adding: rottenpotatoes/app/helpers/ (stored 0%)
+  adding: rottenpotatoes/app/helpers/application_helper.rb (stored 0%)
+  adding: rottenpotatoes/app/helpers/movies_helper.rb (deflated 16%)
+  adding: rottenpotatoes/app/controllers/ (stored 0%)
+  adding: rottenpotatoes/app/controllers/movies_controller.rb (deflated 65%)
+  adding: rottenpotatoes/app/controllers/application_controller.rb (deflated 15%)
+  adding: rottenpotatoes/app/views/ (stored 0%)
+  adding: rottenpotatoes/app/views/movies/ (stored 0%)
+  adding: rottenpotatoes/app/views/movies/edit.html.haml (deflated 48%)
+  adding: rottenpotatoes/app/views/movies/new.html.haml (deflated 44%)
+  adding: rottenpotatoes/app/views/movies/index.html.haml (deflated 58%)
+  adding: rottenpotatoes/app/views/movies/show.html.haml (deflated 45%)
+  adding: rottenpotatoes/app/views/movies/director.html.haml (deflated 53%)
+  adding: rottenpotatoes/app/views/layouts/ (stored 0%)
+  adding: rottenpotatoes/app/views/layouts/application.html.haml (deflated 43%)
+  adding: rottenpotatoes/app/mailers/ (stored 0%)
+  adding: rottenpotatoes/app/mailers/.gitkeep (stored 0%)
+  adding: rottenpotatoes/app/models/ (stored 0%)
+  adding: rottenpotatoes/app/models/movie.rb (deflated 23%)
+  adding: rottenpotatoes/app/models/.gitkeep (stored 0%)
+  adding: rottenpotatoes/app/assets/ (stored 0%)
+  adding: rottenpotatoes/app/assets/images/ (stored 0%)
+  adding: rottenpotatoes/app/assets/images/rails.png (stored 0%)
+  adding: rottenpotatoes/app/assets/javascripts/ (stored 0%)
+  adding: rottenpotatoes/app/assets/javascripts/application.js (deflated 41%)
+  adding: rottenpotatoes/app/assets/stylesheets/ (stored 0%)
+  adding: rottenpotatoes/app/assets/stylesheets/application.css (stored 0%)
+  adding: rottenpotatoes/config/ (stored 0%)
+  adding: rottenpotatoes/config/locales/ (stored 0%)
+  adding: rottenpotatoes/config/locales/en.yml (deflated 26%)
+  adding: rottenpotatoes/config/environments/ (stored 0%)
+  adding: rottenpotatoes/config/environments/development.rb (deflated 50%)
+  adding: rottenpotatoes/config/environments/test.rb (deflated 53%)
+  adding: rottenpotatoes/config/environments/production.rb (deflated 54%)
+  adding: rottenpotatoes/config/initializers/ (stored 0%)
+  adding: rottenpotatoes/config/initializers/inflections.rb (deflated 39%)
+  adding: rottenpotatoes/config/initializers/mime_types.rb (deflated 30%)
+  adding: rottenpotatoes/config/initializers/session_store.rb (deflated 43%)
+  adding: rottenpotatoes/config/initializers/backtrace_silencers.rb (deflated 42%)
+  adding: rottenpotatoes/config/initializers/secret_token.rb (deflated 48%)
+  adding: rottenpotatoes/config/initializers/wrap_parameters.rb (deflated 41%)
+  adding: rottenpotatoes/config/routes.rb (deflated 37%)
+  adding: rottenpotatoes/config/boot.rb (deflated 24%)
+  adding: rottenpotatoes/config/cucumber.yml (deflated 48%)
+  adding: rottenpotatoes/config/database.yml (deflated 54%)
+  adding: rottenpotatoes/config/application.rb (deflated 54%)
+  adding: rottenpotatoes/config/environment.rb (deflated 30%)
+  adding: rottenpotatoes/db/migrate/ (stored 0%)
+  adding: rottenpotatoes/db/migrate/20190307172446_add_director.rb (deflated 13%)
+  adding: rottenpotatoes/db/migrate/20111119180638_create_movies.rb (deflated 43%)
+  adding: rottenpotatoes/features/ (stored 0%)
+  adding: rottenpotatoes/features/support/ (stored 0%)
+  adding: rottenpotatoes/features/support/env.rb (deflated 54%)
+  adding: rottenpotatoes/features/support/selectors.rb (deflated 44%)
+  adding: rottenpotatoes/features/support/paths.rb (deflated 50%)
+  adding: rottenpotatoes/features/support/rspec.rb (deflated 46%)
+  adding: rottenpotatoes/features/sort_movie_list.feature (deflated 54%)
+  adding: rottenpotatoes/features/directors.feature (deflated 59%)
+  adding: rottenpotatoes/features/step_definitions/ (stored 0%)
+  adding: rottenpotatoes/features/step_definitions/.gitkeep (stored 0%)
+  adding: rottenpotatoes/features/step_definitions/movies_steps.rb (deflated 54%)
+  adding: rottenpotatoes/features/step_definitions/web_steps.rb (deflated 71%)
+  adding: rottenpotatoes/features/filter_movie_list.feature (deflated 59%)
+  adding: rottenpotatoes/spec/ (stored 0%)
+  adding: rottenpotatoes/spec/rails_helper.rb (deflated 51%)
+  adding: rottenpotatoes/spec/controllers/ (stored 0%)
+  adding: rottenpotatoes/spec/controllers/movies_controller_spec.rb (deflated 71%)
+  adding: rottenpotatoes/spec/spec_helper.rb (deflated 54%)
+  adding: rottenpotatoes/spec/model/ (stored 0%)
+  adding: rottenpotatoes/spec/model/movie_model_spec.rb (deflated 67%)
+  adding: rottenpotatoes/Gemfile (deflated 47%)
+  adding: rottenpotatoes/Gemfile.lock (deflated 72%)
+ec2-user:~/environment/hw-acceptance-unit-test-cycle (master) $ 
+ec2-user:~/environment/hw-acceptance-unit-test-cycle (master) $ 
+ec2-user:~/environment/hw-acceptance-unit-test-cycle (master) $ cucumber
+bash: cucumber: command not found
+ec2-user:~/environment/hw-acceptance-unit-test-cycle (master) $ cd rottenpotatoes/
+RVM used your Gemfile for selecting Ruby, it is all fine - Heroku does that too,
+you can ignore these warnings with 'rvm rvmrc warning ignore /home/ec2-user/environment/hw-acceptance-unit-test-cycle/rottenpotatoes/Gemfile'.
+To ignore the warning for all files run 'rvm rvmrc warning ignore allGemfiles'.
+
+ec2-user:~/environment/hw-acceptance-unit-test-cycle/rottenpotatoes (master) $ cucumber
+DEPRECATION WARNING: Sprockets method `register_engine` is deprecated.
+Please register a mime type using `register_mime_type` then
+use `register_compressor` or `register_transformer`.
+https://github.com/rails/sprockets/blob/master/guides/extending_sprockets.md#supporting-all-versions-of-sprockets-in-processors
+ (called from block (2 levels) in <class:Railtie> at /home/ec2-user/.rvm/gems/ruby-2.4.0/gems/sass-rails-5.0.5/lib/sass/rails/railtie.rb:57)
+DEPRECATION WARNING: Sprockets method `register_engine` is deprecated.
+Please register a mime type using `register_mime_type` then
+use `register_compressor` or `register_transformer`.
+https://github.com/rails/sprockets/blob/master/guides/extending_sprockets.md#supporting-all-versions-of-sprockets-in-processors
+ (called from block (2 levels) in <class:Railtie> at /home/ec2-user/.rvm/gems/ruby-2.4.0/gems/sass-rails-5.0.5/lib/sass/rails/railtie.rb:58)
+Using the default profile...
+Feature: search for movies by director
+  As a movie buff
+  So that I can find movies with my favorite director
+  I want to include and serach on director information in movies I enter
+
+  Background: movies in database      # features/directors.feature:7
+    Given the following movies exist: # features/step_definitions/movies_steps.rb:2
+      | title        | rating | director     | release_date |
+      | Star Wars    | PG     | George Lucas | 1977-05-25   |
+      | Blade Runner | PG     | Ridley Scott | 1982-06-25   |
+      | Alien        | R      |              | 1979-05-25   |
+      | THX-1138     | R      | George Lucas | 1971-03-11   |
+
+  Scenario: add director to existing movie                # features/directors.feature:16
+    When I go to the edit page for "Alien"                # features/step_definitions/web_steps.rb:48
+    And I fill in "Director" with "Ridley Scott"          # features/step_definitions/web_steps.rb:60
+    And I press "Update Movie Info"                       # features/step_definitions/web_steps.rb:52
+    Then the director of "Alien" should be "Ridley Scott" # features/step_definitions/movies_steps.rb:8
+
+  Scenario: find movie with same director                       # features/directors.feature:22
+    Given I am on the details page for "Star Wars"              # features/step_definitions/web_steps.rb:44
+    When I follow "Find Movies With Same Director"              # features/step_definitions/web_steps.rb:56
+    Then I should be on the Similar Movies page for "Star Wars" # features/step_definitions/web_steps.rb:230
+    And I should see "THX-1138"                                 # features/step_definitions/web_steps.rb:105
+    But I should not see "Blade Runner"                         # features/step_definitions/web_steps.rb:123
+
+  Scenario: can't find similar movies if we don't know director (sad path) # features/directors.feature:29
+    Given I am on the details page for "Alien"                             # features/step_definitions/web_steps.rb:44
+    Then I should not see "Ridley Scott"                                   # features/step_definitions/web_steps.rb:123
+    When I follow "Find Movies With Same Director"                         # features/step_definitions/web_steps.rb:56
+    Then I should be on the home page                                      # features/step_definitions/web_steps.rb:230
+    And I should see "'Alien' has no director info"                        # features/step_definitions/web_steps.rb:105
+
+Feature: display list of movies filtered by MPAA rating
+  As a concerned parent
+  So that I can quickly browse movies appropriate for my family
+  I want to see movies matching only certain MPAA ratings
+
+  Background: movies have been added to database # features/filter_movie_list.feature:7
+    Given the following movies exist:            # features/step_definitions/movies_steps.rb:2
+      | title                   | rating | release_date |
+      | Aladdin                 | G      | 25-Nov-1992  |
+      | The Terminator          | R      | 26-Oct-1984  |
+      | When Harry Met Sally    | R      | 21-Jul-1989  |
+      | The Help                | PG-13  | 10-Aug-2011  |
+      | Chocolat                | PG-13  | 5-Jan-2001   |
+      | Amelie                  | R      | 25-Apr-2001  |
+      | 2001: A Space Odyssey   | G      | 6-Apr-1968   |
+      | The Incredibles         | PG     | 5-Nov-2004   |
+      | Raiders of the Lost Ark | PG     | 12-Jun-1981  |
+      | Chicken Run             | G      | 21-Jun-2000  |
+    And I am on the RottenPotatoes home page     # features/step_definitions/web_steps.rb:44
+
+  Scenario: restrict to movies with 'PG' or 'R' ratings # features/filter_movie_list.feature:24
+      # enter step(s) to check the 'PG' and 'R' checkboxes
+      # enter step(s) to uncheck all other checkboxes
+      # enter step to "submit" the search form on the homepage
+      # enter step(s) to ensure that PG and R movies are visible
+      # enter step(s) to ensure that other movies are not visible
+    When I check the following ratings: PG, R           # features/step_definitions/movies_steps.rb:19
+    And I uncheck the following ratings: G, PG-13       # features/step_definitions/movies_steps.rb:19
+    And I press "ratings_submit"                        # features/step_definitions/web_steps.rb:52
+    Then I should see "The Incredibles"                 # features/step_definitions/web_steps.rb:105
+    And I should see "The Terminator"                   # features/step_definitions/web_steps.rb:105
+    And I should not see "Alladin"                      # features/step_definitions/web_steps.rb:123
+    And I should not see "The Help"                     # features/step_definitions/web_steps.rb:123
+
+  Scenario: all ratings selected                        # features/filter_movie_list.feature:38
+    When I check the following ratings: PG, R, G, PG-13 # features/step_definitions/movies_steps.rb:19
+    And I press "ratings_submit"                        # features/step_definitions/web_steps.rb:52
+    Then I should see all the movies                    # features/step_definitions/movies_steps.rb:25
+
+Feature: display list of movies sorted by different criteria
+  As an avid moviegoer
+  So that I can quickly browse movies based on my preferences
+  I want to see movies sorted by title or release date
+
+  Background: movies have been added to database # features/sort_movie_list.feature:7
+    Given the following movies exist:            # features/step_definitions/movies_steps.rb:2
+      | title                   | rating | release_date |
+      | Aladdin                 | G      | 25-Nov-1992  |
+      | The Terminator          | R      | 26-Oct-1984  |
+      | When Harry Met Sally    | R      | 21-Jul-1989  |
+      | The Help                | PG-13  | 10-Aug-2011  |
+      | Chocolat                | PG-13  | 5-Jan-2001   |
+      | Amelie                  | R      | 25-Apr-2001  |
+      | 2001: A Space Odyssey   | G      | 6-Apr-1968   |
+      | The Incredibles         | PG     | 5-Nov-2004   |
+      | Raiders of the Lost Ark | PG     | 12-Jun-1981  |
+      | Chicken Run             | G      | 21-Jun-2000  |
+    And I am on the RottenPotatoes home page     # features/step_definitions/web_steps.rb:44
+
+  Scenario: sort movies alphabetically          # features/sort_movie_list.feature:24
+    When I follow "Movie Title"                 # features/step_definitions/web_steps.rb:56
+    Then I should see "Aladdin" before "Amelie" # features/step_definitions/movies_steps.rb:13
+
+  Scenario: sort movies in increasing order of release date # features/sort_movie_list.feature:28
+    When I follow "Release Date"                            # features/step_definitions/web_steps.rb:56
+    Then I should see "Aladdin" before "Amelie"             # features/step_definitions/movies_steps.rb:13
+
+7 scenarios (7 passed)
+39 steps (39 passed)
+0m0.583s
+Coverage report generated for Cucumber Features to /home/ec2-user/environment/hw-acceptance-unit-test-cycle/rottenpotatoes/coverage. 46 / 54 LOC (85.19%) covered.
+ec2-user:~/environment/hw-acceptance-unit-test-cycle/rottenpotatoes (master) $ 
